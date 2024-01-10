@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
 
-import 'homepage.dart';
-
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+
+    // After 5 seconds, navigate to the homepage using the named route
+    Future.delayed(const Duration(seconds: 5), () {
+      Navigator.pushReplacementNamed(context, '/home');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,61 +38,44 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
 
-              // const SizedBox(
-              //   height: 8,
-              // ),
+              const SizedBox(height: 12),
 
               // title
               const Text(
-                'Urakaza neza kuri Mpinga',
+                'MPINGA',
                 style: TextStyle(
+                  color: Colors.indigoAccent,
+                  fontSize: 36,
+                  fontFamily: 'Pacifico',
                   fontWeight: FontWeight.bold,
-                  fontSize: 20,
                 ),
               ),
 
-              const SizedBox(height: 14), // Separator
+              const SizedBox(height: 7),
 
-              // subtitle
+              // title
               const Text(
-                'Iyi application igufasha kwiga no gusobanukirwa Ubuzima bujyanye ni imyororokere',
+                'APP',
                 style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.black,
+                  color: Colors.indigoAccent,
+                  fontSize: 24,
+                  fontFamily: 'Pacifico',
+                  fontWeight: FontWeight.bold,
                 ),
-                textAlign: TextAlign.center,
-              ),
-
-              const SizedBox(height: 88), // Separator
-
-              //start now button
-              GestureDetector(
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const HomePage(),
-                  ),
-                ),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.indigoAccent,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  padding: const EdgeInsets.all(25),
-                  child: const Center(
-                    child: Text(
-                      'Kanda Hano Utangire',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                      ),
-                    ),
-                  ),
-                ),
-              )
+              ), // Separator
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: const SizedBox(
+        child: Text(
+          "App version 1.0.0 | 2024",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            color: Colors.indigoAccent,
+          ),
+          textAlign: TextAlign.center,
         ),
       ),
     );

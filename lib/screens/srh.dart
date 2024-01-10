@@ -4,14 +4,14 @@ import 'qa.dart';
 import 'testimonies.dart';
 import 'ask_here.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class SrhPage extends StatefulWidget {
+  const SrhPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<SrhPage> createState() => _SrhPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _SrhPageState extends State<SrhPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,19 +21,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Builder(
-          builder: (context) => IconButton(
-            icon: const Padding(
-              padding: EdgeInsets.only(left: 12.0),
-              child: Icon(
-                Icons.menu,
-                color: Colors.indigoAccent,
-                size: 35,
-              ),
-            ),
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
+        title: const Text(
+          'Sexual Reproductive Heatlth',
+          style: TextStyle(
+            color: Colors.indigo,
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
@@ -189,68 +182,6 @@ class _HomePageState extends State<HomePage> {
             color: Colors.indigoAccent,
           ),
           textAlign: TextAlign.center,
-        ),
-      ),
-
-      // Drawer content
-      drawer: Drawer(
-        backgroundColor: Colors.grey[900],
-        child: Column(
-          children: [
-            // logo
-            Column(
-              children: [
-                DrawerHeader(
-                  child: Image.asset(
-                    'assets/logo.png',
-                    color: Colors.indigoAccent,
-                  ),
-                ),
-
-                // other pages
-                const Padding(
-                  padding: EdgeInsets.only(left: 10),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.home,
-                      color: Colors.indigoAccent,
-                    ),
-                    title: Text(
-                      'Home',
-                      style: TextStyle(color: Colors.indigoAccent),
-                    ),
-                  ),
-                ),
-
-                const Padding(
-                  padding: EdgeInsets.only(left: 10),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.info,
-                      color: Colors.indigoAccent,
-                    ),
-                    title: Text(
-                      'About',
-                      style: TextStyle(color: Colors.indigoAccent),
-                    ),
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 10, bottom: 15),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.help,
-                      color: Colors.indigoAccent,
-                    ),
-                    title: Text(
-                      'Help',
-                      style: TextStyle(color: Colors.indigoAccent),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
         ),
       ),
     );

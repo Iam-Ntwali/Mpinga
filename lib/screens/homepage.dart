@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'qa.dart';
-import 'testimonies.dart';
-import 'ask_here.dart';
+import 'srh.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -27,7 +25,7 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.only(left: 12.0),
               child: Icon(
                 Icons.menu,
-                color: Colors.indigoAccent,
+                color: Colors.indigo,
                 size: 35,
               ),
             ),
@@ -40,8 +38,134 @@ class _HomePageState extends State<HomePage> {
 
       // Body content
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [],
+        children: [
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: Colors.indigoAccent[300],
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Muraho 👋,',
+                  style: TextStyle(
+                    color: Colors.indigo[600],
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  'Urakaza neza kuri \nMPINGA Application',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigo[900],
+                  ),
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  'Iyi Application igufasha kwiga no gusobanukirwa Ubuzima bw\'Imyororokere n\'Ubuzima bwo m\'Umutwe.',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.indigo[700],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 10),
+          Container(
+            padding: const EdgeInsets.all(10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Our Services',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigo[900],
+                  ),
+                ),
+                const SizedBox(height: 10),
+                GestureDetector(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SrhPage(),
+                    ),
+                  ),
+                  child: Card(
+                    color: Colors.indigoAccent,
+                    elevation: 3,
+                    child: ListTile(
+                      leading: Image.asset(
+                        'assets/app.png', // Replace with the path to your image
+                        width: 90,
+                        height: 90,
+                      ),
+                      title: const Text(
+                        'Sexual Reproductive Health',
+                        style: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      subtitle: const Text(
+                        'Kanda hano, wige byinshi byerekeye ubuzima bw\'Imyororokere',
+                        style: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 16,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                GestureDetector(
+                  onTap: () {
+                    // Handle the tap action for the second service
+                    // You can navigate to a new screen or perform any other action here
+                  },
+                  child: Card(
+                    color: Colors.indigoAccent,
+                    elevation: 3,
+                    child: ListTile(
+                      leading: Image.asset(
+                        'assets/app.png', // Replace with the path to your image
+                        width: 90,
+                        height: 90,
+                      ),
+                      title: const Text(
+                        'Sexual Reproductive Health',
+                        style: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      subtitle: const Text(
+                        'Kanda hano, wige byinshi byerekeye ubuzima bw\'Imyororokere',
+                        style: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 16,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
 
       bottomNavigationBar: const SizedBox(

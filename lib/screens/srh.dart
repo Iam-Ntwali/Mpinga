@@ -14,8 +14,9 @@ class SrhPage extends StatefulWidget {
 class _SrhPageState extends State<SrhPage> {
   @override
   Widget build(BuildContext context) {
+    // Scaffold start here
     return Scaffold(
-      backgroundColor: Colors.indigo[200], // Homepage bg color.
+      backgroundColor: Colors.indigo[200],
 
       // AppBar Start here
       appBar: AppBar(

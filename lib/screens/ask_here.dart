@@ -25,7 +25,7 @@ class _AskHerePageState extends State<AskHerePage> {
           'TWANDIKIRE',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 30,
+            fontSize: 18,
           ),
         ),
       ),

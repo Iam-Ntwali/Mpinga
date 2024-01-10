@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     // After 5 seconds, navigate to the homepage using the named route
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 8), () {
       Navigator.pushReplacementNamed(context, '/home');
     });
   }
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Image.asset(
                   'assets/logo.png',
                   height: 140,
-                  color: Colors.indigoAccent,
+                  color: Colors.indigo,
                 ),
               ),
 
@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
               const Text(
                 'MPINGA',
                 style: TextStyle(
-                  color: Colors.indigoAccent,
+                  color: Colors.indigo,
                   fontSize: 36,
                   fontFamily: 'Pacifico',
                   fontWeight: FontWeight.bold,
@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
               const Text(
                 'APP',
                 style: TextStyle(
-                  color: Colors.indigoAccent,
+                  color: Colors.indigo,
                   fontSize: 24,
                   fontFamily: 'Pacifico',
                   fontWeight: FontWeight.bold,

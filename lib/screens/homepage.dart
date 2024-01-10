@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             decoration: BoxDecoration(
               color: Colors.indigoAccent[300],
               borderRadius: BorderRadius.circular(10),
@@ -78,9 +78,9 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 5),
           Container(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -106,8 +106,8 @@ class _HomePageState extends State<HomePage> {
                     child: ListTile(
                       leading: Image.asset(
                         'assets/app.png', // Replace with the path to your image
-                        width: 90,
-                        height: 90,
+                        width: 60,
+                        height: 60,
                       ),
                       title: const Text(
                         'Sexual Reproductive Health',
@@ -140,8 +140,8 @@ class _HomePageState extends State<HomePage> {
                     child: ListTile(
                       leading: Image.asset(
                         'assets/app.png', // Replace with the path to your image
-                        width: 90,
-                        height: 90,
+                        width: 60,
+                        height: 60,
                       ),
                       title: const Text(
                         'Sexual Reproductive Health',

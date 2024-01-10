@@ -44,7 +44,7 @@ class _SrhPageState extends State<SrhPage> {
               child: Text(
                 'Hitamo:',
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),

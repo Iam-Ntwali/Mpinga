@@ -1,4 +1,4 @@
-# mpinga_app
+# mpinga
 
 A new Flutter project.
 

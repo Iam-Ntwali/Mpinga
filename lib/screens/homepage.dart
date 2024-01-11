@@ -18,19 +18,6 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        // actions: [
-        //   IconButton(
-        //     icon: const Icon(
-        //       Icons.settings,
-        //       color: Colors.indigo,
-        //       size: 32,
-        //     ),
-        //     onPressed: () {
-        //       // Navigate to the Settings page
-        //       Navigator.pushNamed(context, '/settings');
-        //     },
-        //   ),
-        // ],
         leading: Builder(
           builder: (context) => IconButton(
             icon: const Padding(
@@ -38,7 +25,7 @@ class _HomePageState extends State<HomePage> {
               child: Icon(
                 Icons.menu,
                 color: Colors.indigo,
-                size: 35,
+                size: 32,
               ),
             ),
             onPressed: () {
@@ -56,8 +43,9 @@ class _HomePageState extends State<HomePage> {
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+              margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
-                color: Colors.indigoAccent[300],
+                color: Colors.indigo[100],
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Column(
@@ -73,11 +61,21 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const SizedBox(height: 5),
                   Text(
-                    'Urakaza neza kuri \nMPINGA Application',
+                    'Urakaza neza kuri',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.indigo[900],
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  Text(
+                    'MPINGA App',
+                    style: TextStyle(
+                      color: Colors.indigo[900],
+                      fontFamily: 'Pacifico',
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   const SizedBox(height: 5),
@@ -94,6 +92,10 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(
               height: 8,
+            ),
+
+            const Divider(
+              color: Colors.indigo,
             ),
             // Services content start here
             Container(

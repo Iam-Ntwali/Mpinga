@@ -55,6 +55,7 @@ class _HomePageState extends State<HomePage> {
                     'Muraho 👋,',
                     style: TextStyle(
                       color: Colors.indigo[600],
+                      fontFamily: 'Pacifico',
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
@@ -63,18 +64,18 @@ class _HomePageState extends State<HomePage> {
                   Text(
                     'Urakaza neza kuri',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Colors.indigo[900],
                     ),
                   ),
-                  const SizedBox(height: 5),
+                  // const SizedBox(height: 1),
                   Text(
                     'MPINGA App',
                     style: TextStyle(
-                      color: Colors.indigo[900],
-                      fontFamily: 'Pacifico',
-                      fontSize: 20,
+                      color: Colors.indigo[800],
+                      fontFamily: 'Coiny',
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -90,25 +91,28 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 8,
+            const SizedBox(height: 8),
+
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              child: Divider(
+                color: Colors.indigo[300],
+              ),
             ),
 
-            const Divider(
-              color: Colors.indigo,
-            ),
             // Services content start here
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Hitamo Service wifuza:',
                     style: TextStyle(
+                      color: Colors.indigo,
+                      fontFamily: 'Pacifico',
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: Colors.indigo[900],
                     ),
                   ),
                   const SizedBox(height: 10),

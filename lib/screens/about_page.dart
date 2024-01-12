@@ -19,7 +19,8 @@ class _AboutPageState extends State<AboutPage> {
           'About',
           style: TextStyle(
             color: Colors.indigo,
-            fontSize: 18,
+            fontFamily: 'Pacifico',
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),

@@ -259,11 +259,12 @@ class _HomePageState extends State<HomePage> {
 
       bottomNavigationBar: const SizedBox(
         child: Text(
-          "Girls Tech Ventures | 2023",
+          "Girls Tech Ventures",
           style: TextStyle(
+            color: Colors.indigo,
+            fontFamily: 'Monolisa',
             fontWeight: FontWeight.bold,
-            fontSize: 16,
-            color: Colors.indigoAccent,
+            fontSize: 12,
           ),
           textAlign: TextAlign.center,
         ),

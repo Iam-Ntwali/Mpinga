@@ -19,7 +19,8 @@ class _HelpPageState extends State<HelpPage> {
           'Help Center',
           style: TextStyle(
             color: Colors.indigo,
-            fontSize: 18,
+            fontFamily: 'Pacifico',
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),

@@ -16,10 +16,11 @@ class _MentalHealthPageState extends State<MentalHealthPage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Text(
-          'Mental Health',
+          'Mental Health Education',
           style: TextStyle(
             color: Colors.indigo,
-            fontSize: 18,
+            fontFamily: 'Pacifico',
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),

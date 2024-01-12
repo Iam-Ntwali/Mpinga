@@ -134,7 +134,7 @@ class _QuizPageState extends State<QuizPage> {
       isLastQuestion = true;
     }
 
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width * 0.5,
       height: 48,
       child: ElevatedButton(

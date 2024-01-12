@@ -17,40 +17,54 @@ List<Question> getQuestions() {
   //ADD questions and answer here
 
   list.add(Question(
-    "Who is the owner of Flutter?",
+    "Ubuzima bw'imyororokere n'iki?",
     [
-      Answer("Nokia", false),
-      Answer("Samsung", false),
-      Answer("Google", true),
-      Answer("Apple", false),
+      Answer("Ni Ukumenyana na bantu benshi", false),
+      Answer("Simbizi", false),
+      Answer(
+          "Nukumenya no gusobanukirwa Imyanya ndangabitsina n'imikorere yabyo",
+          true),
+      Answer("Byose nibyo", false),
     ],
   ));
 
   list.add(Question(
-    "Who owns Iphone?",
+    "Sida yandurira mu mibonano muzabitsina indakigiye?",
     [
-      Answer("Apple", true),
-      Answer("Microsoft", false),
-      Answer("Google", false),
-      Answer("Nokia", false),
+      Answer("Nibyo", true),
+      Answer("Sibyo", false),
     ],
   ));
 
   list.add(Question(
-    "Youtube is _________  platform?",
+    "Ubuzima bw'imyororokere n'iki?",
     [
-      Answer("Music Sharing", false),
-      Answer("Video Sharing", false),
-      Answer("Live Streaming", false),
-      Answer("All of the above", true),
+      Answer("Ni Ukumenyana na bantu benshi", false),
+      Answer("Simbizi", false),
+      Answer(
+          "Nukumenya no gusobanukirwa Imyanya ndangabitsina n'imikorere yabyo",
+          true),
+      Answer("Byose nibyo", false),
     ],
   ));
 
   list.add(Question(
-    "Flutter user dart as a language?",
+    "Sida yandurira mu mibonano muzabitsina indakigiye?",
     [
-      Answer("True", true),
-      Answer("False", false),
+      Answer("Nibyo", true),
+      Answer("Sibyo", false),
+    ],
+  ));
+
+  list.add(Question(
+    "Ubuzima bw'imyororokere n'iki?",
+    [
+      Answer("Ni Ukumenyana na bantu benshi", false),
+      Answer("Simbizi", false),
+      Answer(
+          "Nukumenya no gusobanukirwa Imyanya ndangabitsina n'imikorere yabyo",
+          true),
+      Answer("Byose nibyo", false),
     ],
   ));
 

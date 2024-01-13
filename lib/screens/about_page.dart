@@ -46,7 +46,7 @@ class _AboutPageState extends State<AboutPage> {
                   'MPINGA',
                   style: TextStyle(
                     color: Colors.indigo,
-                    fontSize: 32,
+                    fontSize: 28,
                     fontFamily: 'Pacifico',
                     fontWeight: FontWeight.bold,
                   ),
@@ -58,7 +58,7 @@ class _AboutPageState extends State<AboutPage> {
                   'APP',
                   style: TextStyle(
                     color: Colors.indigo,
-                    fontSize: 24,
+                    fontSize: 20,
                     fontFamily: 'Pacifico',
                     fontWeight: FontWeight.bold,
                   ),
@@ -89,10 +89,10 @@ class _AboutPageState extends State<AboutPage> {
                 const SizedBox(height: 5),
 
                 const SizedBox(height: 10.0),
-                const Text(
-                  'Version 1.0.0',
+                Text(
+                  'Ver 1.0.0',
                   style: TextStyle(
-                    color: Colors.indigo,
+                    color: Colors.indigo[300],
                     fontSize: 16,
                     fontFamily: 'Monolisa',
                     fontWeight: FontWeight.bold,

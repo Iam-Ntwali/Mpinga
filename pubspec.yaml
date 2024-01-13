@@ -12,6 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  change_app_package_name: ^1.1.0
   cupertino_icons: ^1.0.2
   syncfusion_flutter_pdfviewer: ^24.1.45
   url_launcher: ^6.1.4

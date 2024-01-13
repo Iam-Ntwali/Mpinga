@@ -1,4 +1,4 @@
-package com.example.mpinga
+package com.mpinga.com
 
 import io.flutter.embedding.android.FlutterActivity
 

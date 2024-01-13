@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class HelpPage extends StatefulWidget {
@@ -13,6 +15,10 @@ class _HelpPageState extends State<HelpPage> {
   final TextEditingController _phoneNumberController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _messageController = TextEditingController();
+
+  Future sendEmail() async {
+    final Url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +103,7 @@ class _HelpPageState extends State<HelpPage> {
                       labelText: 'Message',
                     ),
                     minLines: 5,
-                    maxLines: 10,
+                    maxLines: 8,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return '⚠️ Andika ubutumwa bwawe';

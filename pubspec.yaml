@@ -13,7 +13,6 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  http: ^1.1.2
   syncfusion_flutter_pdfviewer: ^24.1.45
 
 dev_dependencies:
@@ -26,7 +25,7 @@ flutter_launcher_icons:
   android: "launcher_icon"
   ios: "AppIcon"
   image_path: "assets/icons/icon.png"
-  min_sdk_android: 21
+  min_sdk_android: 16
   remove_alpha_ios: true
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

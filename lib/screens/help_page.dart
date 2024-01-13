@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -145,8 +147,7 @@ class _HelpPageState extends State<HelpPage> {
                   color: Colors.indigo,
                 ),
                 title: TextButton(
-                  onPressed: () =>
-                      launchUrl('https://www.girlstechventure.com' as Uri),
+                  onPressed: () => launch('https://www.girlstechventure.com'),
                   child: const Text(
                     'Visit Our Website',
                     style: TextStyle(

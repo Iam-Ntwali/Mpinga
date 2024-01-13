@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -31,7 +33,7 @@ class _AboutPageState extends State<AboutPage> {
           Container(
             width: double.infinity,
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-            margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
             decoration: BoxDecoration(
               color: Colors.indigo[100],
               borderRadius: BorderRadius.circular(12),
@@ -130,8 +132,7 @@ class _AboutPageState extends State<AboutPage> {
           ),
           const SizedBox(height: 5.0),
           TextButton(
-            onPressed: () =>
-                launchUrl('https://www.girlstechventure.com' as Uri),
+            onPressed: () => launch('https://www.girlstechventure.com'),
             child: const Text(
               'www.girlstechventure.com',
               style: TextStyle(
@@ -153,8 +154,7 @@ class _AboutPageState extends State<AboutPage> {
           ),
           const SizedBox(height: 5.0),
           TextButton(
-            onPressed: () =>
-                launchUrl('https://www.github.com/Iam-Ntwali' as Uri),
+            onPressed: () => launch('https://www.github.com/Iam-Ntwali'),
             child: const Text(
               'Ntwali 🧑‍💻',
               style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HelpPage extends StatefulWidget {
   const HelpPage({super.key});
@@ -137,24 +138,40 @@ class _HelpPageState extends State<HelpPage> {
               margin: const EdgeInsets.symmetric(
                 vertical: 10.0,
               ),
-              child: const ListTile(
-                leading: Icon(
+              child: ListTile(
+                leading: const Icon(
                   Icons.web,
                   size: 24.0,
                   color: Colors.indigo,
                 ),
-                title: Text(
-                  'www.girlstechventures.com',
-                  style: TextStyle(
-                    color: Colors.indigo,
-                    fontSize: 16.0,
-                    fontFamily: 'MonoLisa',
-                    fontWeight: FontWeight.w600,
+                title: TextButton(
+                  onPressed: () =>
+                      launchUrl('https://www.girlstechventure.com' as Uri),
+                  child: const Text(
+                    'Visit Our Website',
+                    style: TextStyle(
+                      color: Colors.indigo,
+                      fontSize: 16.0,
+                      fontFamily: 'MonoLisa',
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
               ),
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: const SizedBox(
+        child: Text(
+          "Girls Tech Ventures",
+          style: TextStyle(
+            color: Colors.indigo,
+            fontFamily: 'Monolisa',
+            fontWeight: FontWeight.bold,
+            fontSize: 12,
+          ),
+          textAlign: TextAlign.center,
         ),
       ),
     );

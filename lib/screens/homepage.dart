@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
               margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               decoration: BoxDecoration(
                 color: Colors.indigo[100],
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,38 +54,38 @@ class _HomePageState extends State<HomePage> {
                   Text(
                     'Muraho 👋,',
                     style: TextStyle(
-                      color: Colors.indigo[600],
+                      color: Colors.indigo[300],
                       fontFamily: 'Pacifico',
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   const SizedBox(height: 5),
-                  Text(
+                  const Text(
                     'Urakaza neza kuri',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: Colors.indigo[900],
+                      color: Colors.indigo,
                     ),
                   ),
                   // const SizedBox(height: 1),
-                  Text(
+                  const Text(
                     'MPINGA App',
                     style: TextStyle(
-                      color: Colors.indigo[800],
+                      color: Colors.indigo,
                       fontFamily: 'Coiny',
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   const SizedBox(height: 5),
-                  Text(
+                  const Text(
                     'Iyi Application igufasha kwiga no gusobanukirwa Ubuzima bw\'Imyororokere n\'Ubuzima bwo m\'Umutwe.',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.normal,
-                      color: Colors.indigo[700],
+                      color: Colors.indigo,
                     ),
                   ),
                 ],

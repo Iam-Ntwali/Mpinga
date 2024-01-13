@@ -28,18 +28,6 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // logo
-              Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: Image.asset(
-                  'assets/images/logo.png',
-                  height: 140,
-                  color: Colors.indigo,
-                ),
-              ),
-
-              const SizedBox(height: 12),
-
               // title
               const Text(
                 'MPINGA',
@@ -51,9 +39,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
 
-              const SizedBox(height: 7),
+              const SizedBox(height: 5),
 
-              // title
               const Text(
                 'APP',
                 style: TextStyle(
@@ -62,18 +49,40 @@ class _SplashScreenState extends State<SplashScreen> {
                   fontFamily: 'Pacifico',
                   fontWeight: FontWeight.bold,
                 ),
-              ), // Separator
+              ),
+
+              const Text(
+                'by',
+                style: TextStyle(
+                  color: Colors.indigo,
+                  fontSize: 18,
+                  fontFamily: 'Monolisa',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
+              const SizedBox(height: 15), // Separator
+
+              // logo
+              Padding(
+                padding: const EdgeInsets.all(2.0),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  height: 140,
+                  color: Colors.indigo,
+                ),
+              ),
             ],
           ),
         ),
       ),
       bottomNavigationBar: const SizedBox(
         child: Text(
-          "App version 1.0.0 | 2024",
+          "Ver: 1.0.0",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
-            color: Colors.indigoAccent,
+            color: Colors.indigo,
           ),
           textAlign: TextAlign.center,
         ),

@@ -40,55 +40,59 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             // Intro contents start here
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+            Card(
+              elevation: 3,
               margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              decoration: BoxDecoration(
-                color: Colors.indigo[100],
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Muraho 👋,',
-                    style: TextStyle(
-                      color: Colors.indigo[300],
-                      fontFamily: 'Pacifico',
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+              child: Container(
+                width: double.infinity,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                decoration: BoxDecoration(
+                  color: Colors.indigo[100],
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Muraho 👋,',
+                      style: TextStyle(
+                        color: Colors.indigo[300],
+                        fontFamily: 'Pacifico',
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 5),
-                  const Text(
-                    'Urakaza neza kuri',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.indigo,
+                    const SizedBox(height: 5),
+                    const Text(
+                      'Urakaza neza kuri',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.indigo,
+                      ),
                     ),
-                  ),
-                  // const SizedBox(height: 1),
-                  const Text(
-                    'MPINGA App',
-                    style: TextStyle(
-                      color: Colors.indigo,
-                      fontFamily: 'Coiny',
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                    // const SizedBox(height: 1),
+                    const Text(
+                      'MPINGA App',
+                      style: TextStyle(
+                        color: Colors.indigo,
+                        fontFamily: 'Coiny',
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 5),
-                  const Text(
-                    'Iyi Application igufasha kwiga no gusobanukirwa Ubuzima bw\'Imyororokere n\'Ubuzima bwo m\'Umutwe.',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.indigo,
+                    const SizedBox(height: 5),
+                    const Text(
+                      'Iyi Application igufasha kwiga no gusobanukirwa Ubuzima bw\'Imyororokere n\'Ubuzima bwo m\'Umutwe.',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.indigo,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(height: 8),
@@ -122,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () => Navigator.pushNamed(context, '/srh_page'),
                     child: Card(
                       color: Colors.indigoAccent,
-                      elevation: 3,
+                      elevation: 0,
                       child: ListTile(
                         leading: Image.asset(
                           'assets/images/baza.png',
@@ -155,7 +159,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () => Navigator.pushNamed(context, '/mh_page'),
                     child: Card(
                       color: Colors.indigoAccent,
-                      elevation: 3,
+                      elevation: 0,
                       child: ListTile(
                         leading: Image.asset(
                           'assets/images/app.png',
@@ -189,7 +193,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () => Navigator.pushNamed(context, '/quiz_page'),
                     child: Card(
                       color: Colors.indigoAccent,
-                      elevation: 3,
+                      elevation: 0,
                       child: ListTile(
                         leading: Image.asset(
                           'assets/images/app.png',
@@ -223,7 +227,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () => Navigator.pushNamed(context, '/help_page'),
                     child: Card(
                       color: Colors.indigoAccent,
-                      elevation: 3,
+                      elevation: 0,
                       child: ListTile(
                         leading: Image.asset(
                           'assets/images/qn.png',

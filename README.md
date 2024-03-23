@@ -13,9 +13,10 @@ Welcome to our Sexual Reproduction Health Education App! This app is designed to
 Dart, Flutter 
 
 ## Getting Started
+Download the app release here: https://github.com/Iam-Ntwali/Mpinga/releases/tag/Mpinga
 
 ## Feedback and Support
-I value your feedback! If you have any suggestions, questions, or encounter any issues while using this app, please don't hesitate to contact me, EMAIL: ntwalipit@outlook.com
+I value your feedback! If you have any suggestions, or questions, or encounter any issues while using this app, please don't hesitate to contact me.
 
 I hope you find it informative, engaging, and empowering!
 

@@ -11,18 +11,13 @@ Welcome to our Sexual Reproduction Health Education App! This app is designed to
 
 ## Programming Languages 
 <img
-        src='https://img.shields.io/badge/Flutter-%2302569B.svg?style=plastic&logo=Flutter&logoColor=white'
-        alt='Flutter'
-      /> <img
-          src='https://img.shields.io/badge/Dart-%230175C2.svg?style=plastic&logo=dart&logoColor=white'
-          alt='Dart'
-        /><img
-        src='https://img.shields.io/badge/Flutter-%2302569B.svg?style=plastic&logo=Flutter&logoColor=white'
-        alt='Flutter'
-      /> <img
-          src='https://img.shields.io/badge/Dart-%230175C2.svg?style=plastic&logo=dart&logoColor=white'
-          alt='Dart'
-        />
+   src='https://img.shields.io/badge/Flutter-%2302569B.svg?style=plastic&logo=Flutter&logoColor=white'
+   alt='Flutter'
+/> <br/>
+<img
+src='https://img.shields.io/badge/Dart-%230175C2.svg?style=plastic&logo=dart&logoColor=white'
+alt='Dart'
+/>
 
 ## Getting Started
 Download the app release here: https://github.com/Iam-Ntwali/Mpinga/releases/tag/Mpinga
